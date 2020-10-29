@@ -1,3 +1,12 @@
+:root {
+    --gray-dark: #e6e6e6;
+    --gray-light: #f0f0f0;
+    --blue: #00aba9;
+    --green: #7cb06c;
+    --orange: #EB9D3A;
+    --red: #e6563b;
+}
+
 body {
     font-family: 'Abel', sans-serif;
     background: #f0f0f0;
@@ -30,6 +39,95 @@ nav .nav-item {
     position: relative;
     bottom: 6px;
 }
+
+h1,h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+}
+h2 {
+    font-size: 35px;
+}
+
+/* ABOUT */
+
+#about-container {
+    width: 100vw;
+    text-align: center;
+}
+
+#company-title {
+    margin: .5em;
+}
+
+#company-location {
+    margin-bottom: 0;
+}
+
+/* PILLARS */
+
+#pillar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pillar-text {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.pillar {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid white;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pillar-div-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: .5em;
+    grid-column-gap: 1.5em;
+    margin: 2.5em;
+}
+
+
+
+/* COLORS */
+.blue {
+    background-color: var(--blue);
+}
+
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.anton {
+    font-family: 'Anton', sans-serif;
+}
+
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+
 @media screen and (min-width: 992px) {
     .sub-title {text-align: left;}
     hr {width: 100%;}
@@ -38,4 +136,257 @@ nav .nav-item {
         position: relative;
         top: 5px;
     }
+}
+
+
+/* Small devices (>576px)*/
+@media (min-width: 576px) {
+
+    #company-title {
+        font-size: 40px;
+    }
+
+}
+body {
+    font-family: 'Abel', sans-serif;
+    background: #f0f0f0;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.brand-name {font-size: 1.75em;}
+
+nav a {
+    font-size: .75em;
+    color: black;
+}
+
+.nav-background {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 59px;
+    width: 100%;
+    top: 37px;
+    z-index: -1000;
+}
+
+nav .nav-item {
+    position: relative;
+    bottom: 6px;
+}
+/*<<Head>>>>*/
+
+h1,h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+}
+h2 {
+    font-size: 35px;
+}
+
+/* ABOUT */
+
+#about-container {
+    width: 100vw;
+    text-align: center;
+}
+
+#company-title {
+    margin: .5em;
+}
+
+#company-location {
+    margin-bottom: 0;
+}
+
+/* PILLARS */
+
+#pillar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pillar-text {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.pillar {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid white;
+    height: 105px;
+    width: 105px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#pillar-div-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: .5em;
+    grid-column-gap: 1.5em;
+    margin: 2.5em;
+}
+
+
+
+/* COLORS */
+.blue {
+    background-color: var(--blue);
+}
+
+
+.green {
+    background-color: var(--green);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.anton {
+    font-family: 'Anton', sans-serif;
+}
+
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+/*Css For Mobile Circles*/
+
+.row-1{
+    font-family: 'Anton', sans-serif;
+}
+.row-2{
+    font-family: 'Anton', sans-serif;
+}
+.dot-1 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 5px;
+    background-color: #E6563B;
+    border-radius: 50%;
+    display: inline-grid;
+    color: white;
+    line-height: 6;
+}
+.dot-2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 5px;
+    background-color: #DEA03D;
+    border-radius: 50%;
+    display: inline-grid;
+    color: white;
+    line-height: 6;
+}
+.dot-3 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 5px;
+    background-color: #7CB06C;
+    border-radius: 50%;
+    display: inline-grid;
+    color: white;
+    line-height: 6;
+}
+.dot-4 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: solid 5px;
+    background-color: #00ABA9;
+    border-radius: 50%;
+    display: inline-grid;
+    color: white;
+    line-height: 6;
+}
+.row-3{
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+.dot-5 {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border: solid 2px;
+    background-color: #E6563B;
+    border-radius: 50%;
+    display: inline-grid;
+    color: black;
+    line-height: 1;
+}
+.dot-6 {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border: solid 2px;
+    background-color: #DEA03D;
+    border-radius: 50%;
+    display: inline-grid;
+    color: black;
+    line-height: 1;
+}
+.dot-7 {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border: solid 2px;
+    background-color: #7CB06C;
+    border-radius: 50%;
+    display: inline-grid;
+    color: black;
+    line-height: 1;
+}
+.dot-8 {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border: solid 2px;
+    background-color: #00ABA9;
+    border-radius: 50%;
+    display: inline-grid;
+    color: black;
+    line-height: 1;
+}
+
+
+@media screen and (min-width: 992px) {
+    .sub-title {text-align: left;}
+    hr {width: 100%;}
+
+    .brand-name  {
+        position: relative;
+        top: 5px;
+    }
+}
+
+
+/* Small devices (>576px)*/
+@media (min-width: 576px) {
+
+    #company-title {
+        font-size: 40px;
+    }
+
 }
