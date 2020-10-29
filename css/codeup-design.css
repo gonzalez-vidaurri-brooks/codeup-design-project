@@ -30,7 +30,6 @@ nav .nav-item {
     position: relative;
     bottom: 6px;
 }
-
 @media screen and (min-width: 992px) {
     .sub-title {text-align: left;}
     hr {width: 100%;}
