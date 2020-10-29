@@ -179,7 +179,7 @@ nav .nav-item {
     position: relative;
     bottom: 6px;
 }
-<<<<<<< HEAD
+/* HEAD */
 
 h1,h2 {
     font-family: 'Anton', sans-serif;
@@ -240,8 +240,6 @@ h2 {
     margin: 2.5em;
 }
 
-
-
 /* COLORS */
 .blue {
     background-color: var(--blue);
@@ -268,9 +266,6 @@ h2 {
     font-family: 'Abel', sans-serif;
 }
 
-
-=======
->>>>>>> 87cae6144a552f8e9729a74f0541df77ef81e88d
 @media screen and (min-width: 992px) {
     .sub-title {text-align: left;}
     hr {width: 100%;}
