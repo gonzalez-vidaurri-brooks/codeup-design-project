@@ -182,6 +182,9 @@ h2 {
 #featured-projects {
     display: none;
 }
+#selected-work.abel{
+    display: none;
+}
 
     hr {
         display: none;
@@ -194,6 +197,7 @@ h2 {
     #feed-last {
         display: none;
     }
+
 
 
 
@@ -265,6 +269,15 @@ h2 {
     .project-pillars div:nth-child(1) {
         margin-left: auto;
     }
+    #selected-work{
+        display: none;
+    }
+    #container-select-work{
+        display: none;
+    }
+    #selected-work.abel{
+        display: flex;
+    }
 
 }
 
@@ -276,7 +289,7 @@ h2 {
 }
 
 #large-screen-grid {
-    display: none;
+    display: grid;
 }
 
 
