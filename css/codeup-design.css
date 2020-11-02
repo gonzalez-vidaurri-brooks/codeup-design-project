@@ -122,6 +122,7 @@ h2 {
 .project-img {
     width: 100%;
     border: 5px solid;
+    border-color: lightgrey;
     border-radius: 3px;
     grid-area: 1 / 1 / 2 / -1;
 }
@@ -209,6 +210,9 @@ h2 {
 
     #company-title {
         font-size: 40px;
+    }
+    #selected-lg{
+        display: none;
     }
 
 
@@ -312,11 +316,12 @@ h2 {
 
     /* NEWS */
 
-    #selected-work {
-        grid-area: selectedwork;
+
+    #selected{
         text-align: left;
-        margin: 2em;
-        font-weight: bold;
+        font-size: smaller;
+        margin-left: 40px;
+        margin-bottom: -50px;
     }
 
     #featured-projects {
@@ -335,6 +340,7 @@ h2 {
         width: 3em;
         height: 3em;
         border: 2px solid;
+        border-color: lightgrey;
     }
 
     .project-card {
