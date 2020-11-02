@@ -40,6 +40,8 @@ nav .nav-item {
     bottom: 6px;
 }
 
+/* HEADER */
+
 h1,h2 {
     font-family: 'Anton', sans-serif;
 }
@@ -99,6 +101,56 @@ h2 {
     margin: 2.5em;
 }
 
+/* SELECTED WORK */
+
+#selected-work {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FEATURED PROJECTS */
+
+.project-card {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-template-rows: 1fr 1.5em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-img {
+    width: 100%;
+    border: 5px solid;
+    border-radius: 3px;
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.project-name {
+    font-family: Abel, sans serif;
+    margin-top: 5px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.project-pillars {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.pillar-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
 
 
 /* COLORS */
@@ -127,277 +179,201 @@ h2 {
     font-family: 'Abel', sans-serif;
 }
 
-
-@media screen and (min-width: 992px) {
-    .sub-title {text-align: left;}
-    hr {width: 100%;}
-
-    .brand-name  {
-        position: relative;
-        top: 5px;
-    }
+#featured-projects {
+    display: none;
 }
 
+    hr {
+        display: none;
+    }
 
-/* Small devices (>576px)*/
+    #news {
+        display: none;
+    }
+
+    #feed-last {
+        display: none;
+    }
+
+
+
+
+
+/* Small devices 576px and up */
+
 @media (min-width: 576px) {
 
     #company-title {
         font-size: 40px;
     }
 
-}
-body {
-    font-family: 'Abel', sans-serif;
-    background: #f0f0f0;
+
+    #pillar-div-list {
+        display: flex;
+        margin: 2.5em 2.5em 1em 2.5em;
+    }
+
+    hr {
+        display: block;
+        width: 70vw;
+    }
+
+    #carousel {
+        display: none;
+    }
+
+    .featured {
+        display: none;
+    }
+
+    #news {
+        display: none;
+    }
+
+    #featured-projects {
+        display: grid;
+        grid-row-gap: 2em;
+        grid-column-gap: 1em;
+        margin: 0 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #featured-projects section:nth-child(n+2){
+        display: inherit;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .pillar {
+        margin: 0 .2em;
+        border-radius: 50%;
+        border: 8px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pillar-text {
+        font-family: 'Anton', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    .project-pillars div:nth-child(1) {
+        margin-left: auto;
+    }
+
 }
 
-.wrapper {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.brand-name {font-size: 1.75em;}
-
-nav a {
-    font-size: .75em;
-    color: black;
-}
-
-.nav-background {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    height: 59px;
-    width: 100%;
-    top: 37px;
-    z-index: -1000;
-}
-
-nav .nav-item {
-    position: relative;
-    bottom: 6px;
-}
-
-/* HEAD */
-
-h1,h2 {
-    font-family: 'Anton', sans-serif;
-}
-
-h1 {
-    font-size: 55px;
-}
-h2 {
-    font-size: 35px;
-}
-
-/* ABOUT */
-
-#about-container {
-    width: 100vw;
-    text-align: center;
-}
-
-#company-title {
-    margin: .5em;
-}
-
-#company-location {
-    margin-bottom: 0;
-}
-
-/* PILLARS */
-
-#pillar-container {
-    display: flex;
-    justify-content: center;
-}
-
-.pillar-text {
-    font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 24px;
-}
-
-.pillar {
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 6px solid white;
-    height: 105px;
-    width: 105px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-#pillar-div-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: .5em;
-    grid-column-gap: 1.5em;
-    margin: 2.5em;
-}
-
-/* COLORS */
-.blue {
-    background-color: var(--blue);
-}
-
-
-.green {
-    background-color: var(--green);
-}
-
-.red {
-    background-color: var(--red);
-}
-
-.orange {
-    background-color: var(--orange);
-}
-
-.anton {
-    font-family: 'Anton', sans-serif;
-}
-
-.abel {
-    font-family: 'Abel', sans-serif;
-}
-
-
-/*Css For Mobile Circles*/
-
-.row-1{
-    font-family: 'Anton', sans-serif;
-}
-.row-2{
-    font-family: 'Anton', sans-serif;
-}
-.dot-1 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border: solid 5px;
-    background-color: #E6563B;
-    border-radius: 50%;
-    display: inline-grid;
-    color: white;
-    line-height: 6;
-}
-.dot-2 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border: solid 5px;
-    background-color: #DEA03D;
-    border-radius: 50%;
-    display: inline-grid;
-    color: white;
-    line-height: 6;
-}
-.dot-3 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border: solid 5px;
-    background-color: #7CB06C;
-    border-radius: 50%;
-    display: inline-grid;
-    color: white;
-    line-height: 6;
-}
-.dot-4 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border: solid 5px;
-    background-color: #00ABA9;
-    border-radius: 50%;
-    display: inline-grid;
-    color: white;
-    line-height: 6;
-}
 .row-3{
     font-family: 'Anton', sans-serif;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1em;
 }
-.dot-5 {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    border: solid 2px;
-    background-color: #E6563B;
-    border-radius: 50%;
-    display: inline-grid;
-    color: black;
-    line-height: 1;
+
+#large-screen-grid {
+    display: none;
 }
-.dot-6 {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    border: solid 2px;
-    background-color: #DEA03D;
-    border-radius: 50%;
-    display: inline-grid;
-    color: black;
-    line-height: 1;
-}
-.dot-7 {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    border: solid 2px;
-    background-color: #7CB06C;
-    border-radius: 50%;
-    display: inline-grid;
-    color: black;
-    line-height: 1;
-}
-.dot-8 {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    border: solid 2px;
-    background-color: #00ABA9;
-    border-radius: 50%;
-    display: inline-grid;
-    color: black;
-    line-height: 1;
+
+
+/* Medium devices 768px and up */
+
+@media (min-width: 768px){
+
+
+    #carousel {
+        display: none;
+    }
+
+    .featured {
+        display: none;
+    }
+
+    hr {
+        width: 550px;
+    }
+
+    /* NEWS */
+
+    #selected-work {
+        grid-area: selectedwork;
+        text-align: left;
+        margin: 2em;
+        font-weight: bold;
+    }
+
+    #featured-projects {
+        grid-area: featuredprojects;
+        grid-row-gap: 3em;
+        grid-column-gap: 3em;
+    }
+
+    #news {
+        display: inline-grid;
+        grid-area: feed;
+        margin-right: 2em;
+    }
+
+    #news img {
+        width: 3em;
+        height: 3em;
+        border: 2px solid;
+    }
+
+    .project-card {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .pillar-projects {
+        font-size: .8em;
+    }
+
+    #large-screen-grid {
+        display: grid;
+        grid-template-areas:
+                "selectedwork selectedwork feedlast"
+                "featuredprojects featuredprojects feed"
+                "featured-projects featured-projects feed"
+                "featured-projects featured-projects feed";
+        grid-column-gap: 1em;
+    }
+
+
+
+
+    /* TWITTER */
+
+    #feed-last {
+        display: inline;
+        text-align: left;
+        margin-top: 2em;
+        grid-area: feedlast;
+    }
+
+    #feed {
+        display: inline-grid;
+        grid-template-columns: 0.5fr 2fr;
+    }
+
+    #twitter {
+        margin-top: 2em;
+
+    }
+
 }
 
 
 
 @media screen and (min-width: 992px) {
-    .sub-title {text-align: left;}
-    hr {width: 100%;}
+        .sub-title {text-align: left;}
+        hr {width: 550px;}
 
-    .brand-name  {
-        position: relative;
-        top: 5px;
-    }
-}
-
-
-/* Small devices (>576px)*/
-@media (min-width: 576px) {
-
-        #nav {
-            display: none;
+        .brand-name  {
+            position: relative;
+            top: 5px;
         }
-
-        #nav-view {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-    #company-title {
-        font-size: 40px;
     }
-
-}
